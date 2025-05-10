@@ -16,11 +16,15 @@ function dividi(x, y) {
 //3.isEven
 const isEven = (num) => num % 2 === 0
 
+
 //4.capitalize
 function capitalize(stringa){
     return stringa.charAt(0).toUpperCase() + stringa.slice(1).toLowerCase()
 }
 
+function capitalize(stringa){
+    return stringa.charAt(0).toUpperCase() + stringa.slice(1).toLowerCase()
+}
 //5.sumArray
 function sumArray(arr){
     return arr.reduce((acc, num) => acc + num, 0 )
@@ -40,6 +44,7 @@ function getEmailDomain(email){
 function findUserById(users, id) {
     return users.find((u) => u.id === id)
 }
+
 
 //9 addUsers
 function addUsers(users, newUser) {

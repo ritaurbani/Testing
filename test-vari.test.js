@@ -13,28 +13,25 @@ test("la funzione 'dividi' deve gestire la divisione per 0 lanciando un errore",
     expect(() => dividi(5,0)).toThrow()
 })
 
-
 //TEST 1.
 test('la funzione dividi restituisce il quoziente tra due numeri', () => {
     expect(dividi(10,2)).toBe(5)
 })
 
 
-
-//TEST 3. Lavorare con numeri pari/dispari
+//TEST 3. Lavorare con numeri pari/dispari - BOOLEAN
 test('la funzione "isEven" restituisce true per numeri pari e false per dispari', () => {
     expect(isEven(4)).toBeTruthy()
     expect(isEven(3)).toBeFalsy()
 })
 
 
-
 //TEST-4.Manipolazione di stringhe - Capitalizzazione
 test('la funzione capitalize restituisce la stringa con la prima lettera maiuscola', () => {
     expect(capitalize("boolen")).toBe('Boolean')
     expect(capitalize("JAVASCRIPT")).toBe('Javascript')//devo mettere lo lowercase
-
 })
+
 
 //TEST-5 Operazioni su array - somma degli elementi
 test('la funzione "sumArray" restituisce la somma degli elementi in un array di numeri', () => {
